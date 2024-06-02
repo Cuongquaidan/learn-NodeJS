@@ -1,0 +1,31 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Cuongquaidan/learn-NodeJS.git"
+    },
+    "keywords": [
+        "blog",
+        "learn",
+        "nodejs",
+        "node",
+        "js"
+    ],
+    "author": "cuong",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Cuongquaidan/learn-NodeJS/issues"
+    },
+    "homepage": "https://github.com/Cuongquaidan/learn-NodeJS#readme",
+    "dependencies": {
+        "express": "^4.19.2",
+        "nodemon": "^3.1.2"
+    }
+}
