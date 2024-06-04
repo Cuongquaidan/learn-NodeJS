@@ -2,13 +2,14 @@ const { json } = require("express");
 const Course = require("../models/Course");
 class SiteController {
     //[GET] /news
-    async index(req, res) {
+    async index(req, res, next) {
         try {
-            const courses = await Course.find({});
-            res.json(courses);
-            console.log(courses);
+            const courses = await Course.find({}).lean();
+            res.render("home", {
+                courses,
+            });
         } catch (err) {
-            res.status(400).json({ error: "ERROR" });
+            next();
         }
     }
 
